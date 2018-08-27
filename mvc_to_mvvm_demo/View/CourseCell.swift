@@ -21,6 +21,8 @@ class CourseCell: UITableViewCell {
     override func setHighlighted(_ highlighted: Bool, animated: Bool) {
         super.setHighlighted(highlighted, animated: animated)
         contentView.backgroundColor = isHighlighted ? .highlightColor : .white
+        textLabel?.textColor = isHighlighted ? .white : .mainTextBlue
+        detailTextLabel?.textColor = isHighlighted ? .white : .black
     }
 
 }
