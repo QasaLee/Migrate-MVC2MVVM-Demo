@@ -43,12 +43,15 @@ class CoursesViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.backgroundColor = .yellow
         navigationController?.navigationBar.isTranslucent = false
-//        navigationController?.navigationBar.tintColor = UIColor.rgb(red: 50, green: 199, blue: 242)
-        navigationController?.navigationBar.tintColor = UIColor.red // It seems not working!
-        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: .white]
+        navigationController?.navigationBar.tintColor = UIColor.rgb(red: 50, green: 199, blue: 242)
+//        navigationController?.navigationBar.tintColor = UIColor.red // It seems not working!
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
     }
 
     fileprivate func setupTableView() {
+        tableView.register(CourseCell.self, forCellReuseIdentifier: "cellId")
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 128, bottom: 0, right: 24)
+        tableView.separatorColor = UIColor.mainTextBlue
         
     }
     
