@@ -12,6 +12,9 @@
 		C7E6217320EC0C45005BFCFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E6217120EC0C45005BFCFC /* Main.storyboard */; };
 		C7E6217520EC0C45005BFCFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E6217420EC0C45005BFCFC /* Assets.xcassets */; };
 		C7E6217820EC0C45005BFCFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E6217620EC0C45005BFCFC /* LaunchScreen.storyboard */; };
+		FBE391E42133DBB00070801F /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE391E32133DBB00070801F /* CoursesViewController.swift */; };
+		FBE391E72133DC040070801F /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE391E62133DC040070801F /* CourseViewModel.swift */; };
+		FBE391EA2133DCD10070801F /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE391E92133DCD10070801F /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		C7E6217420EC0C45005BFCFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7E6217720EC0C45005BFCFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7E6217920EC0C45005BFCFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE391E32133DBB00070801F /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		FBE391E62133DC040070801F /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
+		FBE391E92133DCD10070801F /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		C7E6216C20EC0C44005BFCFC /* mvc_to_mvvm_demo */ = {
 			isa = PBXGroup;
 			children = (
+				FBE391E82133DCC50070801F /* Model */,
+				FBE391E52133DBEC0070801F /* ViewModel */,
+				FBE391E22133DB8A0070801F /* Controller */,
 				C7E6216D20EC0C45005BFCFC /* AppDelegate.swift */,
 				C7E6216F20EC0C45005BFCFC /* ViewController.swift */,
 				C7E6217120EC0C45005BFCFC /* Main.storyboard */,
@@ -62,6 +71,30 @@
 				C7E6217920EC0C45005BFCFC /* Info.plist */,
 			);
 			path = mvc_to_mvvm_demo;
+			sourceTree = "<group>";
+		};
+		FBE391E22133DB8A0070801F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBE391E32133DBB00070801F /* CoursesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FBE391E52133DBEC0070801F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FBE391E62133DC040070801F /* CourseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FBE391E82133DCC50070801F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBE391E92133DCD10070801F /* Course.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +129,7 @@
 				TargetAttributes = {
 					C7E6216920EC0C44005BFCFC = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -136,7 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7E6217020EC0C45005BFCFC /* ViewController.swift in Sources */,
+				FBE391E72133DC040070801F /* CourseViewModel.swift in Sources */,
+				FBE391EA2133DCD10070801F /* Course.swift in Sources */,
 				C7E6216E20EC0C45005BFCFC /* AppDelegate.swift in Sources */,
+				FBE391E42133DBB00070801F /* CoursesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.letsbuildthatapp.mvc-to-mvvm-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -307,7 +344,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.letsbuildthatapp.mvc-to-mvvm-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
