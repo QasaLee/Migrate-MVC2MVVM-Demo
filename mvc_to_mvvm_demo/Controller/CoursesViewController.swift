@@ -38,6 +38,18 @@ class CoursesViewController: UITableViewController {
 
     
     // MARK: - Helper Methods
+    
+    fileprivate func setupTableView() {
+        tableView.register(CourseCell.self, forCellReuseIdentifier: "cellId")
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 128, bottom: 0, right: 24)
+        tableView.separatorColor = UIColor.mainTextBlue
+        tableView.backgroundColor = UIColor.rgb(red: 12, green: 47, blue: 57)
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 160
+        
+        tableView.tableFooterView = UIView() // What does this do?
+    }
+    
     fileprivate func setupNavbar() {
         navigationItem.title = "Courses"
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -48,13 +60,6 @@ class CoursesViewController: UITableViewController {
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
     }
 
-    fileprivate func setupTableView() {
-        tableView.register(CourseCell.self, forCellReuseIdentifier: "cellId")
-        tableView.separatorInset = UIEdgeInsets(top: 0, left: 128, bottom: 0, right: 24)
-        tableView.separatorColor = UIColor.mainTextBlue
-        
-    }
-    
     fileprivate func fetchData() {
         
     }

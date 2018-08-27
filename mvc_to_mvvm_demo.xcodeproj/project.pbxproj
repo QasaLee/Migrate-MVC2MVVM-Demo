@@ -17,6 +17,7 @@
 		FBE391EA2133DCD10070801F /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE391E92133DCD10070801F /* Course.swift */; };
 		FBE391ED2133DEF60070801F /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE391EC2133DEF60070801F /* CourseCell.swift */; };
 		FBE391EF2133E07E0070801F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE391EE2133E07E0070801F /* Extensions.swift */; };
+		FBE391F2213420760070801F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE391F1213420760070801F /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FBE391E92133DCD10070801F /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		FBE391EC2133DEF60070801F /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		FBE391EE2133E07E0070801F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FBE391F1213420760070801F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		C7E6216C20EC0C44005BFCFC /* mvc_to_mvvm_demo */ = {
 			isa = PBXGroup;
 			children = (
+				FBE391F02134206A0070801F /* Service */,
 				FBE391EB2133DED20070801F /* View */,
 				FBE391E82133DCC50070801F /* Model */,
 				FBE391E52133DBEC0070801F /* ViewModel */,
@@ -109,6 +112,14 @@
 				FBE391EC2133DEF60070801F /* CourseCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FBE391F02134206A0070801F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FBE391F1213420760070801F /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE391ED2133DEF60070801F /* CourseCell.swift in Sources */,
+				FBE391F2213420760070801F /* Service.swift in Sources */,
 				C7E6217020EC0C45005BFCFC /* ViewController.swift in Sources */,
 				FBE391E72133DC040070801F /* CourseViewModel.swift in Sources */,
 				FBE391EA2133DCD10070801F /* Course.swift in Sources */,
@@ -334,13 +346,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TU4944T6UG;
+				DEVELOPMENT_TEAM = LQY7L3XZHF;
 				INFOPLIST_FILE = mvc_to_mvvm_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.letsbuildthatapp.mvc-to-mvvm-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natelee.mvc-to-mvvm-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -352,13 +364,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TU4944T6UG;
+				DEVELOPMENT_TEAM = LQY7L3XZHF;
 				INFOPLIST_FILE = mvc_to_mvvm_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.letsbuildthatapp.mvc-to-mvvm-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natelee.mvc-to-mvvm-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
