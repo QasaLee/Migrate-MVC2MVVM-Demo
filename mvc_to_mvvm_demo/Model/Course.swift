@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Course: Decodable {
+class Course: Decodable { // Attention: It used to be 'Struct'
     let id: Int
     let name: String
     let number_of_lessons: Int

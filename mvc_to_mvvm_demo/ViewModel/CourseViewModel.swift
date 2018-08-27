@@ -11,9 +11,20 @@ import UIKit
 
 class CourseViewModel { // Attention: It used to be a 'Struct'
     let name: String
+    let detailTxtString: String
+    let accessoryType: UITableViewCell.AccessoryType
+    
     
     // Dependency Injection(DI)
     init(course: Course) {
+        self.name = course.name
         
+        if (course.number_of_lessons > 10) {
+            detailTxtString = "There are more than 10 courses! \(course.number_of_lessons) lessons to be exact."
+            accessoryType = .detailButton // More options here!
+        } else {
+            detailTxtString = "Lessons: \(course.number_of_lessons) available!"
+            accessoryType = .detailDisclosureButton // try more options here!
+        }
     }
 }
