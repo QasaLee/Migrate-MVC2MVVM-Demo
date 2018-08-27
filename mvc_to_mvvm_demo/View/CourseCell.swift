@@ -10,7 +10,6 @@ import UIKit
 
 class CourseCell: UITableViewCell {
 
-    
     var courseViewModel: CourseViewModel! {
         didSet {
             textLabel?.text = courseViewModel.name
@@ -37,6 +36,7 @@ class CourseCell: UITableViewCell {
         textLabel?.font = UIFont.boldSystemFont(ofSize: 24)
         textLabel?.numberOfLines = 0 // Make it self-resizing
         detailTextLabel?.textColor = .black
+        detailTextLabel?.numberOfLines = 0
         detailTextLabel?.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.ultraLight)
     }
     

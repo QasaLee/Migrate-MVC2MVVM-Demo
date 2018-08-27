@@ -19,8 +19,8 @@ class CourseViewModel { // Attention: It used to be a 'Struct'
     init(course: Course) {
         self.name = course.name
         
-        if (course.number_of_lessons > 10) {
-            detailTxtString = "There are more than 10 courses! \(course.number_of_lessons) lessons to be exact."
+        if (course.number_of_lessons > 32) {
+            detailTxtString = "There are more than 32 courses! \(course.number_of_lessons) lessons to be exact."
             accessoryType = .detailButton // More options here!
         } else {
             detailTxtString = "Lessons: \(course.number_of_lessons) available!"
