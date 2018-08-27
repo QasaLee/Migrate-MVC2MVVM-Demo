@@ -29,10 +29,11 @@ class CoursesViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! CourseCell
 
         // Configure the cell...
-
+        let courseViewModel = courseViewModels[indexPath.row]
+        cell.courseViewModel = courseViewModel
         return cell
     }
 
