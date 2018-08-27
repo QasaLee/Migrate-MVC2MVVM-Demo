@@ -39,7 +39,13 @@ class CoursesViewController: UITableViewController {
     
     // MARK: - Helper Methods
     fileprivate func setupNavbar() {
-        
+        navigationItem.title = "Courses"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.backgroundColor = .yellow
+        navigationController?.navigationBar.isTranslucent = false
+//        navigationController?.navigationBar.tintColor = UIColor.rgb(red: 50, green: 199, blue: 242)
+        navigationController?.navigationBar.tintColor = UIColor.red // It seems not working!
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: .white]
     }
 
     fileprivate func setupTableView() {
