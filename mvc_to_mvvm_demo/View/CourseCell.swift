@@ -11,7 +11,13 @@ import UIKit
 class CourseCell: UITableViewCell {
 
     
-    var courseViewModel: CourseViewModel! // TODO: didSet
+    var courseViewModel: CourseViewModel! {
+        didSet {
+            textLabel?.text = courseViewModel.name
+            detailTextLabel?.text = courseViewModel.detailTxtString
+            accessoryType = courseViewModel.accessoryType
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

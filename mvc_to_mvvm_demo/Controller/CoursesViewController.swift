@@ -33,7 +33,7 @@ class CoursesViewController: UITableViewController {
 
         // Configure the cell...
         let courseViewModel = courseViewModels[indexPath.row]
-        cell.courseViewModel = courseViewModel
+        cell.courseViewModel = courseViewModel // didSet will work.
         return cell
     }
 
