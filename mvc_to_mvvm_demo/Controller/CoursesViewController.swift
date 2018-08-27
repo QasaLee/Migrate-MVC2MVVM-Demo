@@ -56,8 +56,7 @@ class CoursesViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.backgroundColor = .yellow
         navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.tintColor = UIColor.rgb(red: 50, green: 199, blue: 242)
-//        navigationController?.navigationBar.tintColor = UIColor.red // It seems not working!
+        navigationController?.navigationBar.barTintColor = UIColor.rgb(red: 50, green: 199, blue: 242)
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
     }
 

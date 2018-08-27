@@ -26,7 +26,7 @@ class CourseCell: UITableViewCell {
     override func setHighlighted(_ highlighted: Bool, animated: Bool) {
         super.setHighlighted(highlighted, animated: animated)
         contentView.backgroundColor = isHighlighted ? .highlightColor : .white
-        textLabel?.textColor = isHighlighted ? .white : .mainTextBlue
+        textLabel?.textColor = isHighlighted ? UIColor.white : .mainTextBlue
         detailTextLabel?.textColor = isHighlighted ? .white : .black
     }
     
@@ -36,7 +36,7 @@ class CourseCell: UITableViewCell {
         // Cell Configuration
         textLabel?.font = UIFont.boldSystemFont(ofSize: 24)
         textLabel?.numberOfLines = 0 // Make it self-resizing
-        detailTextLabel?.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        detailTextLabel?.textColor = .black
         detailTextLabel?.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.ultraLight)
     }
     
