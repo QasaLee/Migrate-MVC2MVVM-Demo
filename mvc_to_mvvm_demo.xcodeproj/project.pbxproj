@@ -16,7 +16,7 @@
 		FBE391E72133DC040070801F /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE391E62133DC040070801F /* CourseViewModel.swift */; };
 		FBE391EA2133DCD10070801F /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE391E92133DCD10070801F /* Course.swift */; };
 		FBE391ED2133DEF60070801F /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE391EC2133DEF60070801F /* CourseCell.swift */; };
-		FBE391EF2133E07E0070801F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE391EE2133E07E0070801F /* Constants.swift */; };
+		FBE391EF2133E07E0070801F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE391EE2133E07E0070801F /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		FBE391E62133DC040070801F /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
 		FBE391E92133DCD10070801F /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		FBE391EC2133DEF60070801F /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
-		FBE391EE2133E07E0070801F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FBE391EE2133E07E0070801F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 				FBE391E22133DB8A0070801F /* Controller */,
 				C7E6216D20EC0C45005BFCFC /* AppDelegate.swift */,
 				C7E6216F20EC0C45005BFCFC /* ViewController.swift */,
-				FBE391EE2133E07E0070801F /* Constants.swift */,
+				FBE391EE2133E07E0070801F /* Extensions.swift */,
 				C7E6217120EC0C45005BFCFC /* Main.storyboard */,
 				C7E6217420EC0C45005BFCFC /* Assets.xcassets */,
 				C7E6217620EC0C45005BFCFC /* LaunchScreen.storyboard */,
@@ -187,7 +187,7 @@
 				C7E6217020EC0C45005BFCFC /* ViewController.swift in Sources */,
 				FBE391E72133DC040070801F /* CourseViewModel.swift in Sources */,
 				FBE391EA2133DCD10070801F /* Course.swift in Sources */,
-				FBE391EF2133E07E0070801F /* Constants.swift in Sources */,
+				FBE391EF2133E07E0070801F /* Extensions.swift in Sources */,
 				C7E6216E20EC0C45005BFCFC /* AppDelegate.swift in Sources */,
 				FBE391E42133DBB00070801F /* CoursesViewController.swift in Sources */,
 			);

@@ -9,6 +9,14 @@
 import Foundation
 import UIKit
 
+
+class CustomNavigationController: UINavigationController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+//        return .lightContent 
+    }
+}
+
 extension UIColor {
     static let mainTextBlue = UIColor.rgb(red: 7, green: 71, blue: 89)
     static let highlightColor = UIColor.rgb(red: 50, green: 199, blue: 242)
