@@ -61,7 +61,17 @@ class CoursesViewController: UITableViewController {
     }
 
     fileprivate func fetchData() {
-        
+        Service.shared.fetchCourses { (courses, error) in
+            if let error = error {
+                print("Failed to fetch data due to this error: \(error)")
+                return
+            }
+            
+            // Else it can fetch the data and I already have courses right now.
+            self.courseViewModels = courses?.map { return CourseViewModel(course: $0) } ?? []
+            
+            self.tableView.reloadData()
+        }
     }
     
 }
