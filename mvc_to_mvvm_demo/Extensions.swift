@@ -12,8 +12,8 @@ import UIKit
 
 class CustomNavigationController: UINavigationController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
-//        return .lightContent 
+//        return .default
+        return .lightContent // For dark theme apps. Status bar is snow white!
     }
 }
 
